@@ -1,4 +1,4 @@
-name: Build and Release Windows Executable
+name: manual
 
 on:
   workflow_dispatch:  # Allows manual trigger from GitHub Actions

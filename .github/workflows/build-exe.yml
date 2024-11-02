@@ -1,7 +1,7 @@
 name: Build and Release Windows Executable
 
 on:
-  push:
+  workflow_dispatch:
     tags:
       - 'v1.0.0'  # Trigger on version tags (e.g., v1.0.0)
 
